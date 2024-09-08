@@ -1,0 +1,40 @@
+<div class="flex">
+  <div
+    class="profile-image flex relative items-center justify-center !w-[62px] !h-[50px] rounded-md hover:bg-skin-surface-hover"
+    [ngClass]="[class]"
+  >
+    <div
+      class="image-wrapper rounded-full flex justify-cente ritems-center w-full h-full overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=100"
+        class="aspect-square min-h-full min-w-full object-cover"
+      />
+    </div>
+    <div
+      class="rounded-full bg-green-500 w-[13px] aspect-square border-2 absolute bottom-0 right-0 border-skin-surface"
+    ></div>
+  </div>
+  <div class="flex flex-col ml-4">
+    <div class="text-white"><strong >Aaj Tak</strong> was live: "AAJTAK 2 LIVE | HARYANA ELECTION 2024 | Vinesh Phogat, Bajrang Punia न..."</div>
+    <div class="text-[#8C8F92]">12h</div>
+  </div>
+  <div class="flex items-center mr-2 ">
+    <button class="rounded-full  hover:bg-[#4F5052] flex justify-center items-center p-2" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>check</mat-icon>
+        <span>Mark as Read</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>cancel_presentation</mat-icon>
+        <span> Remove this notification</span>
+      </button>
+    </mat-menu>
+  </div>
+  <div class="flex items-center">
+    <span class="bg-[#0866FF] w-[12px] h-[12px] rounded-full block"></span>
+  </div>
+</div>
